@@ -13,13 +13,13 @@ import {
 	Grid,
 } from "antd";
 import { IoIosArrowForward } from "react-icons/io";
-import moment from "moment";
 import dayjs from "dayjs";
 import customParseFormat from "dayjs/plugin/customParseFormat";
 import telegramIcon from "../../assets/images/telegram.png";
 import logo from "../../assets/images/fep-logo.png";
 import arrowDown from "../../assets/images/arrow_drop_down.png";
 import "./FormPage.scss";
+// eslint-disable-next-line no-unused-vars
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
@@ -265,11 +265,6 @@ const FormPage = () => {
 				setIsScreenValid(true);
 			});
 	}, [form, values]);
-
-	// Handle previous screen navigation
-	const handlePreviousScreen = () => {
-		setCurrentScreen((prev) => prev - 1);
-	};
 
 	const formatPhoneNumber = (value) => {
 		if (!value) return "+1";
