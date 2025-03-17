@@ -1,0 +1,72 @@
+.privacy-policy {
+	font-family: "Roboto", sans-serif;
+	background-color: #f5f5f5;
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 100px 20px;
+	line-height: 1.6;
+
+	@media (min-width: 868px) {
+		padding: 100px;
+	}
+
+	.back-button {
+		background-color: #fff;
+		position: fixed;
+		top: 20px;
+		left: 20px;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		font-size: 16px;
+		color: #1f3d29;
+		transition: all 0.3s ease;
+		border: 1px solid #1f3d29;
+		border-radius: 50%;
+		padding: 6px;
+		width: 40px;
+		height: 40px;
+
+		@media (min-width: 868px) {
+			top: 50px;
+			left: 50px;
+		}
+
+		&:hover {
+			color: white;
+			background-color: #1f3d29;
+			border-color: #1f3d29;
+		}
+
+		.arrow-icon {
+			font-size: 24px;
+			transition: all 0.1.5s ease;
+		}
+	}
+
+	h1 {
+		font-size: 2rem;
+		margin-bottom: 20px;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+
+	p {
+		margin-bottom: 15px;
+	}
+
+	a {
+		color: #007bff;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
