@@ -1,10 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import FormPage from "./components/formPage/formPage";
-
 import "./App.css";
 import Terms from "./components/terms/Terms";
 import PrivacyPolicy from "./components/terms/PrivacyPolicy";
+import FormPage from "./components/formPage/FormPage";
 
 function App() {
 	return (
