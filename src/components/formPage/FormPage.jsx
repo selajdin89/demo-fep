@@ -64,31 +64,52 @@ const DateOfBirthInput = ({ value, onChange }) => {
 		<Row gutter={8}>
 			<Col span={8}>
 				<DatePicker
+					// placement="topLeft"
 					picker="year"
 					placeholder="YYYY"
 					value={year ? dayjs().set("year", year) : null} // Only set the year
 					onChange={handleYearChange}
 					style={{ width: "100%" }}
+					inputRender={(props) => (
+						<input
+							{...props}
+							inputMode="numeric" // Open numeric keyboard on mobile
+						/>
+					)}
 				/>
 			</Col>
 			<Col span={8}>
 				<DatePicker
+					placement="top"
 					picker="month"
 					placeholder="MM"
 					value={month ? dayjs().set("month", month - 1) : null} // Only set the month
 					onChange={handleMonthChange}
 					style={{ width: "100%" }}
 					format="MM" // Display only the month
+					inputRender={(props) => (
+						<input
+							{...props}
+							inputMode="numeric" // Open numeric keyboard on mobile
+						/>
+					)}
 				/>
 			</Col>
 			<Col span={8}>
 				<DatePicker
+					placement="bottomLeft"
 					picker="date"
 					placeholder="DD"
 					value={day ? dayjs().set("date", day) : null} // Only set the day
 					onChange={handleDayChange}
 					style={{ width: "100%" }}
 					format="DD" // Display only the day
+					inputRender={(props) => (
+						<input
+							{...props}
+							inputMode="numeric" // Open numeric keyboard on mobile
+						/>
+					)}
 				/>
 			</Col>
 		</Row>
