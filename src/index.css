@@ -5,7 +5,11 @@
 
 	color-scheme: light dark;
 	/* color: rgba(255, 255, 255, 0.87); */
-	background-color: #1f3d29;
+	/* background-color: #1f3d29; */
+	background: url("./assets/images/bg-graphic.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -16,4 +20,10 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+body {
+	place-items: center;
+	display: grid;
+	min-height: 100dvh;
 }

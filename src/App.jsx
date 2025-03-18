@@ -8,7 +8,7 @@ import FormPage from "./components/formPage/FormPage";
 function App() {
 	return (
 		<Router>
-			<div>
+			<div className="App">
 				<Routes>
 					{/* Main Form Page */}
 					<Route path="/" element={<FormPage />} />

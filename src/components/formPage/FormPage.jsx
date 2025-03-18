@@ -80,6 +80,7 @@ const DateOfBirthInput = ({ value, onChange }) => {
 			</Col>
 			<Col span={8}>
 				<DatePicker
+					className="month-picker"
 					placement="top"
 					picker="month"
 					placeholder="MM"

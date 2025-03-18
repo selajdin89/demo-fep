@@ -9,6 +9,10 @@
 		padding: 15px;
 	}
 
+	@media (min-width: 1920px) {
+		min-height: unset;
+	}
+
 	.left-section {
 		display: none;
 		flex-direction: column;
@@ -367,4 +371,10 @@
 	@media (min-width: 868px) {
 		justify-content: end;
 	}
+}
+
+/* Adjust dropdown position */
+.month-picker .ant-picker-dropdown {
+	bottom: 100% !important; /* Move dropdown below the input */
+	margin-top: 4px; /* Add a small gap between input and dropdown */
 }
